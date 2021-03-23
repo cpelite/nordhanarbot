@@ -19,7 +19,7 @@ class personen(commands.Cog):
         embed = discord.Embed(title="Fakten über die Nordhanarische Kaiserin")
         embed.add_field(name="Name der Person", value="Maja von Seyffenstein-Brülitz")
         embed.add_field(name="Geburtsdatum und Alter", value="09.10.1995, 25 Jahre alt")
-        embed.add_field(name="Dienstgrad", value="Reichsmarschall")
+        embed.add_field(name="Dienstgrad", value="-")
         await ctx.send(embed=embed)
         return
 
