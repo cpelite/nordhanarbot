@@ -1,9 +1,9 @@
 from discord.ext import commands
 import discord
 
-class personen(commands.Cog):
-    def __init__(self,mdnbot):
-        self.bot = mdnbot
+class monarchen(commands.Cog):
+    def __init__(self,bot):
+        self.bot = bot
 
     @commands.command()
     async def kaiser(self, ctx):
@@ -23,5 +23,48 @@ class personen(commands.Cog):
         await ctx.send(embed=embed)
         return
 
+    @commands.command()
+    async def jennifer(self, ctx):
+        embed = discord.Embed(title="Fakten über die Erzherzogin von Seyffenstein")
+        embed.add_field(name="Name der Person", value="Jennifer Theresa Lisa Deborah von Seyffenstein")
+        embed.add_field(name="Geburtsdatum und Alter", value="25.03.1975, 46 Jahre alt")
+        embed.add_field(name="Dienstgrad", value="Generaloberst e.H")
+        await ctx.send(embed=embed)
+        return
+
+    @commands.command()
+    async def fritzviktor(self, ctx):
+        embed = discord.Embed(title="Fakten über den Bajarischen König")
+        embed.add_field(name="Name der Person", value="Friedrich Viktor August von Bajar")
+        embed.add_field(name="Geburtsdatum und Alter", value="-")
+        embed.add_field(name="Dienstgrad", value="-")
+        await ctx.send(embed=embed)
+        return
+
+class personen(commands.Cog):
+    def __init__(self, bot):
+        self.bot = bot
+
+    @commands.command()
+    async def svh(self, ctx):
+        embed = discord.Embed(title="Fakten über Sebastian von Hammer")
+        embed.add_field(name="Name der Person", value ="Sebastian von Hammer")
+        embed.add_field(name="Geburtsdatum und Alter", value="18.08.1980, 40 Jahre alt")
+        embed.add_field(name="Dienstgrad", value="Oberst e.H.")
+        embed.add_field(name="Ämter die die Person aktuell bekleidet", value = "Präsident der Regierung, Parteipräsident der Liberalen")
+        await ctx.send(embed=embed)
+        return
+
+    @commands.command()
+    async def drechsler(self, ctx):
+        embed = discord.Embed(title="Fakten über Sarah Drechsler")
+        embed.add_field(name="Name der Person", value="Sarah Drechsler")
+        embed.add_field(name="Geburtsdatum und Alter", value="19.02.1971, 50 Jahre alt")
+        embed.add_field(name="Dienstgrad", value="-")
+        embed.add_field(name="Ämter die die Person aktuell bekleidet", value ="Vizepräsidentin der Regierung, Parteipräsidentin der Konservativen")
+        await ctx.send(embed)
+        return
+
 def setup(bot):
+    bot.add_cog(monarchen(bot))
     bot.add_cog(personen(bot))
