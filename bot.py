@@ -16,7 +16,7 @@ bot = commands.Bot(command_prefix='$', intents=intents)
 
 #load extensions, biatch
 bot.load_extension("personennordhanar")
-bot.load_extension("länder")
+bot.load_extension("commonfacts")
 
 #welcome message
 @bot.event
