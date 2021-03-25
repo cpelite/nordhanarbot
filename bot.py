@@ -16,7 +16,7 @@ bot = commands.Bot(command_prefix='$', intents=intents)
 
 #load extensions, biatch
 bot.load_extension("personennordhanar")
-#bot.load_extension("deltaläuft")
+bot.load_extension("länder")
 
 #welcome message
 @bot.event
@@ -28,7 +28,7 @@ async def on_ready():
 async def botinfo(ctx):
     embed = discord.Embed(title="Botinfo")
     embed.add_field(name="Entwickler", value="SvH")
-    embed.add_field(name="Botversion", value="Alpha 1 - Putschvorbereitungen.")
+    embed.add_field(name="Botversion", value="Beta 2 - Operation Stahlrim.")
     embed.add_field(name="Verwendete Programmiersprache", value="Python 3.9")
     await ctx.send(embed=embed)
 
