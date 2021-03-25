@@ -42,7 +42,7 @@ class monarchen(commands.Cog):
         return
 
 class personen(commands.Cog):
-    def __init__(self, bot):
+    def __init__(self,bot):
         self.bot = bot
 
     @commands.command()
@@ -62,7 +62,7 @@ class personen(commands.Cog):
         embed.add_field(name="Geburtsdatum und Alter", value="19.02.1971, 50 Jahre alt")
         embed.add_field(name="Dienstgrad", value="-")
         embed.add_field(name="Ämter die die Person aktuell bekleidet", value ="Vizepräsidentin der Regierung, Parteipräsidentin der Konservativen")
-        await ctx.send(embed)
+        await ctx.send(embed=embed)
         return
 
 def setup(bot):
