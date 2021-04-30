@@ -62,6 +62,7 @@ class länder(commands.Cog):
     @commands.command()
     async def reichsdiät(self, ctx):
         embed = discord.Embed(title="Die aktuelle Sitzverteilung in der Reichsdiät")
+        embed.add_field(title="Gesamtzahl der Sitze", value="261")
         embed.add_field(name="Sozialisten (S)", value="95 Sitze")
         embed.add_field(name="Grüne (G)", value="8 Sitze")
         embed.add_field(name="Liberale (L)", value="49 Sitze")
