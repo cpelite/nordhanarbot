@@ -61,7 +61,17 @@ class personen(commands.Cog):
         embed.add_field(name="Name der Person", value="Sarah Drechsler")
         embed.add_field(name="Geburtsdatum und Alter", value="19.02.1971, 50 Jahre alt")
         embed.add_field(name="Dienstgrad", value="-")
-        embed.add_field(name="Ämter die die Person aktuell bekleidet", value ="Vizepräsidentin der Regierung, Parteipräsidentin der Konservativen")
+        embed.add_field(name="Ämter die die Person aktuell bekleidet", value ="2. Präsidentin der Reichsdiät")
+        await ctx.send(embed=embed)
+        return
+
+    @commands.command()
+    async def daimek(self, ctx):
+        embed = discord.Embed(title="Fakten über Rainer von Daimek")
+        embed.add_field(name="Name der Person", value="Rainer von Daimek")
+        embed.add_field(name="Geburtsdatum und Alter", value="05.10.1938, 82 Jahre alt")
+        embed.add_field(name="Dienstgrad", value="Brigadier a. D.")
+        embed.add_field(name="Ämter die die Person aktuell bekleidet", value="Vizepräsident der Regierung, Minister für Verteidigung")
         await ctx.send(embed=embed)
         return
 
