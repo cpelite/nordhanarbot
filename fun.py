@@ -19,5 +19,12 @@ class gifs(commands.Cog):
         await ctx.send(embed=embed)
         return
 
+    @commands.command()
+    async def triggered(self, ctx):
+        embed = discord.Embed(title="TRIGGERED!")
+        embed.set_image(url="https://media.tenor.com/images/e0940c7f695430dc680f21c7a48417ba/tenor.gif")
+        await ctx.send(embed=embed)
+        return
+
 def setup(bot):
     bot.add_cog(gifs(bot))
