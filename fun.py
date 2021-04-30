@@ -6,7 +6,7 @@ class fun(commands.Cog):
         self.bot = bot
 
         @commands.command()
-        async def diggah(ctx):
+        async def wat(ctx):
             embed = discord.Embed(title="Wat?")
             embed.set_image(url="https://media.tenor.com/images/2c474b0b4404b624d80df839bc688b5f/tenor.gif")
             await ctx.send(embed=embed)
