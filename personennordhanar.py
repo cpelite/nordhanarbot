@@ -75,6 +75,16 @@ class personen(commands.Cog):
         await ctx.send(embed=embed)
         return
 
+    @commands.command()
+    async def langbrook(self, ctx):
+        embed = discord.Embed(title="Fakten über Leonidas Langbrook")
+        embed.add_field(name="Name der Person", value="Leonidas Langbrook")
+        embed.add_field(name="Geburtsdatum und Alter", value="17. April 1939")
+        embed.add_field(name="Dienstgrad", value="-")
+        embed.add_field(name="Ämter die die Person aktuell bekleidet", value="Präsident der kaiserlichen Justiz")
+        await ctx.send(embed=embed)
+        return
+
 def setup(bot):
     bot.add_cog(monarchen(bot))
     bot.add_cog(personen(bot))
