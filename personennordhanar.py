@@ -58,7 +58,7 @@ class personen(commands.Cog):
     @commands.command()
     async def drechsler(self, ctx):
         embed = discord.Embed(title="Fakten über Sarah Drechsler")
-        embed.add_field(name="Name der Person", value="Sarah Drechsler")
+        embed.add_field(name="Name der Person", value="Sarah von Drechsler")
         embed.add_field(name="Geburtsdatum und Alter", value="19.02.1971, 50 Jahre alt")
         embed.add_field(name="Dienstgrad", value="-")
         embed.add_field(name="Ämter die die Person aktuell bekleidet", value ="2. Präsidentin der Reichsdiät")

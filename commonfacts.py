@@ -2,8 +2,8 @@ from discord.ext import commands
 import discord
 
 class länder(commands.Cog):
-    def __init__(self,mdnbot):
-        self.bot = mdnbot
+    def __init__(self,bot):
+        self.bot = bot
 
     @commands.command()
     async def seyffenstein(self, ctx):
@@ -59,10 +59,14 @@ class länder(commands.Cog):
         await ctx.send(embed=embed)
         return
 
+class parlamente(commands.Cog):
+    def __init__(self, bot):
+        self.bot = bot
+
     @commands.command()
     async def reichsdiät(self, ctx):
         embed = discord.Embed(title="Die aktuelle Sitzverteilung in der Reichsdiät")
-        embed.add_field(title="Gesamtzahl der Sitze", value="261")
+        embed.add_field(name="Gesamtzahl der Sitze", value="261 Sitze")
         embed.add_field(name="Sozialisten (S)", value="95 Sitze")
         embed.add_field(name="Grüne (G)", value="8 Sitze")
         embed.add_field(name="Liberale (L)", value="49 Sitze")
@@ -75,3 +79,4 @@ class länder(commands.Cog):
 
 def setup(bot):
     bot.add_cog(länder(bot))
+    bot.add_cog(parlamente(bot))
