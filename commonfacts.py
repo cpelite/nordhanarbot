@@ -59,5 +59,18 @@ class länder(commands.Cog):
         await ctx.send(embed=embed)
         return
 
+    @commands.command()
+    async def reichsdiät(self, ctx):
+        embed = discord.Embed(title="Die aktuelle Sitzverteilung in der Reichsdiät")
+        embed.add_field(name="Sozialisten (S)", value="95 Sitze")
+        embed.add_field(name="Grüne (G)", value="8 Sitze")
+        embed.add_field(name="Liberale (L)", value="49 Sitze")
+        embed.add_field(name="Konservative (K)", value="63 Sitze")
+        embed.add_field(name="Landbund (LB)", value="24 Sitze")
+        embed.add_field(name="Freiheitlich Nationale Versammlung (FNV)", value="21 Sitze")
+        embed.add_field(name="Christliche Reichsbewegung (CRB)", value="1 Sitz")
+        await ctx.send(embed=embed)
+        return
+
 def setup(bot):
     bot.add_cog(länder(bot))
