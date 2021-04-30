@@ -17,6 +17,7 @@ bot = commands.Bot(command_prefix='$', intents=intents)
 #load extensions
 bot.load_extension("personennordhanar")
 bot.load_extension("commonfacts")
+bot.load_extension("fun")
 
 #welcome message
 @bot.event
