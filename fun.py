@@ -26,5 +26,12 @@ class gifs(commands.Cog):
         await ctx.send(embed=embed)
         return
 
+    @commands.command()
+    async def diggah(self, ctx):
+        embed = discord.Embed(title="Diggah...")
+        embed.set_image(url="https://media1.tenor.com/images/b557a994267920b1271b49bda6153f01/tenor.gif?itemid=7363931")
+        await ctx.send(embed=embed)
+        return
+
 def setup(bot):
     bot.add_cog(gifs(bot))

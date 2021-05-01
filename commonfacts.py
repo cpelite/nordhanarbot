@@ -52,7 +52,7 @@ class länder(commands.Cog):
 
     @commands.command()
     async def mikulov(self, ctx):
-        embed = discord.Embed(title="Fakten über die reichsunmittelbare Stadt San Vezzano")
+        embed = discord.Embed(title="Fakten über das Großherzogtum Mikulov")
         embed.add_field(name="Landesoberhaupt", value="Pavel Sebirov, Großherzog von Mikulov")
         embed.add_field(name="Regierungschef", value="-")
         embed.add_field(name="Landeshauptstadt", value="Mikulov")
