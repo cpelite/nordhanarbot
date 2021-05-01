@@ -33,5 +33,12 @@ class gifs(commands.Cog):
         await ctx.send(embed=embed)
         return
 
+    @commands.command()
+    async def wtf(self, ctx):
+        embed = discord.Embed(title="WTF...")
+        embed.set_image(url="https://media1.tenor.com/images/86f3b65249fbaca12e142281558c06ac/tenor.gif?itemid=4486363")
+        await ctx.send(embed=embed)
+        return
+
 def setup(bot):
     bot.add_cog(gifs(bot))
