@@ -51,7 +51,7 @@ class personen(commands.Cog):
         embed.add_field(name="Name der Person", value ="Sebastian von Hammer")
         embed.add_field(name="Geburtsdatum und Alter", value="18.08.1980, 40 Jahre alt")
         embed.add_field(name="Dienstgrad", value="Oberst e.H.")
-        embed.add_field(name="Ämter die die Person aktuell bekleidet", value = "Präsident der Regierung, Parteipräsident der Liberalen")
+        embed.add_field(name="Ämter die die Person aktuell bekleidet", value = "Vizepräsident der Regierung, Parteipräsident der Liberalen")
         await ctx.send(embed=embed)
         return
 
@@ -61,7 +61,7 @@ class personen(commands.Cog):
         embed.add_field(name="Name der Person", value="Sarah von Drechsler")
         embed.add_field(name="Geburtsdatum und Alter", value="19.02.1971, 50 Jahre alt")
         embed.add_field(name="Dienstgrad", value="-")
-        embed.add_field(name="Ämter die die Person aktuell bekleidet", value ="2. Präsidentin der Reichsdiät")
+        embed.add_field(name="Ämter die die Person aktuell bekleidet", value ="-")
         await ctx.send(embed=embed)
         return
 
@@ -71,7 +71,7 @@ class personen(commands.Cog):
         embed.add_field(name="Name der Person", value="Rainer von Daimek")
         embed.add_field(name="Geburtsdatum und Alter", value="05.10.1938, 82 Jahre alt")
         embed.add_field(name="Dienstgrad", value="Brigadier a. D.")
-        embed.add_field(name="Ämter die die Person aktuell bekleidet", value="Vizepräsident der Regierung, Minister für Verteidigung")
+        embed.add_field(name="Ämter die die Person aktuell bekleidet", value="-")
         await ctx.send(embed=embed)
         return
 

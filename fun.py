@@ -40,5 +40,12 @@ class gifs(commands.Cog):
         await ctx.send(embed=embed)
         return
 
+    @commands.command()
+    async def putsch(self, ctx):
+        embed = discord.Embed(title="PUTSCH!")
+        embed.set_image(url="https://media1.tenor.com/images/7d6504908d87d84394a00a5f66964e6b/tenor.gif?itemid=5690722")
+        await ctx.send(embed=embed)
+        return
+
 def setup(bot):
     bot.add_cog(gifs(bot))
