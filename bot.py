@@ -29,7 +29,7 @@ async def on_ready():
 async def botinfo(ctx):
     embed = discord.Embed(title="Botinfo")
     embed.add_field(name="Entwickler", value="SvH")
-    embed.add_field(name="Botversion", value="1.0 - König von Bajar")
+    embed.add_field(name="Botversion", value="1.1 - Erzherzogin von Seyffenstein")
     embed.add_field(name="Verwendete Programmiersprache", value="Python 3.9")
     await ctx.send(embed=embed)
 
