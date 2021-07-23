@@ -66,6 +66,7 @@ class parlamente(commands.Cog):
     @commands.command()
     async def reichsdiät(self, ctx):
         embed = discord.Embed(title="Die aktuelle Sitzverteilung in der Reichsdiät")
+        embed.set_image(url="https://seyffenstein-bajar.de/lychee/uploads/big/4b60d1599c6794f8b97894b4db7d9dcd.png")
         embed.add_field(name="Gesamtzahl der Sitze", value="269 Sitze")
         embed.add_field(name="Monarchistisch-Christliche-Union (MCU)", value="53 Sitze")
         embed.add_field(name="Sozialisten (S)", value="46 Sitze")
