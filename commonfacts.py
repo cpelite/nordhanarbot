@@ -78,6 +78,11 @@ class parlamente(commands.Cog):
         await ctx.send(embed=embed)
         return
 
+    @commands.command()
+    async def rdgrafik(self, message):
+        await message.channel.send("https://seyffenstein-bajar.de/lychee/uploads/big/4b60d1599c6794f8b97894b4db7d9dcd.png")
+        return
+
 def setup(bot):
     bot.add_cog(länder(bot))
     bot.add_cog(parlamente(bot))
