@@ -9,7 +9,7 @@ class länder(commands.Cog):
     async def seyffenstein(self, ctx):
         embed = discord.Embed(title="Fakten über das Erzherzogtum Seyffenstein")
         embed.add_field(name="Landesoberhaupt", value="Jennifer von Seyffenstein, Erzherzogin von Seyffenstein")
-        embed.add_field(name="Regierungschef", value="Stephan von Demelstein")
+        embed.add_field(name="Regierungschef", value="Bernhard von Dassen")
         embed.add_field(name="Landeshauptstadt", value="Syffia")
         await ctx.send(embed=embed)
         return
@@ -35,8 +35,8 @@ class länder(commands.Cog):
     @commands.command()
     async def treckelhude(self, ctx):
         embed = discord.Embed(title="Fakten über die Hansestadt Treckelhude")
-        embed.add_field(name="Landesoberhaupt", value="Tobias Brinkzik-Morgenlich, Bürgermeister von Treckelhude")
-        embed.add_field(name="Regierungschef", value="Tobias Brinkzik-Morgenlich")
+        embed.add_field(name="Landesoberhaupt", value="Alfred Drewes, Bürgermeister von Treckelhude")
+        embed.add_field(name="Regierungschef", value="Alfred Drewes")
         embed.add_field(name="Landeshauptstadt", value="Treckelhude")
         await ctx.send(embed=embed)
         return
@@ -66,14 +66,15 @@ class parlamente(commands.Cog):
     @commands.command()
     async def reichsdiät(self, ctx):
         embed = discord.Embed(title="Die aktuelle Sitzverteilung in der Reichsdiät")
-        embed.add_field(name="Gesamtzahl der Sitze", value="261 Sitze")
-        embed.add_field(name="Sozialisten (S)", value="95 Sitze")
-        embed.add_field(name="Grüne (G)", value="8 Sitze")
-        embed.add_field(name="Liberale (L)", value="49 Sitze")
-        embed.add_field(name="Konservative (K)", value="63 Sitze")
-        embed.add_field(name="Landbund (LB)", value="24 Sitze")
-        embed.add_field(name="Freiheitlich Nationale Versammlung (FNV)", value="21 Sitze")
-        embed.add_field(name="Christliche Reichsbewegung (CRB)", value="1 Sitz")
+        embed.add_field(name="Gesamtzahl der Sitze", value="269 Sitze")
+        embed.add_field(name="Monarchistisch-Christliche-Union (MCU)", value="53 Sitze")
+        embed.add_field(name="Sozialisten (S)", value="46 Sitze")
+        embed.add_field(name="Christliche Reichsbewegung (CRB)", value="37 Sitze")
+        embed.add_field(name="Marxistisch Ökologische Partei (MÖP)", value="27 Sitze")
+        embed.add_field(name="Freiheitlich Nationale Versammlung (FNV)", value="20 Sitze")
+        embed.add_field(name="Landbund (LB)", value="18 Sitze")
+        embed.add_field(name="Partei des Neuen (PN)", value="14 Sitze")
+        embed.add_field(name="Nationale Versammlung (NV)", value="13 Sitze")
         await ctx.send(embed=embed)
         return
 

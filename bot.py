@@ -19,12 +19,7 @@ bot.load_extension("personennordhanar")
 bot.load_extension("commonfacts")
 bot.load_extension("fun")
 
-#welcome message
-@bot.event
-async def on_ready():
-    print('Bot wurde als {0.user} eingeloggt.')
-    print("Bot aktiv. Warte auf Befehle.")
-
+#botinfo command
 @bot.event
 async def botinfo(ctx):
     embed = discord.Embed(title="Botinfo")
